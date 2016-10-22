@@ -19,7 +19,7 @@ all_genom2_lamin.bin - containing the information about positions of lamins.
 The formats of the binary files are specified by the message.proto protocol buffers file and in the Bachelor thesis 
 "Efficient chromatin movement simulation" (see its Appendix B).
 Some of the additional parameters of pendolino.py include --simulation_name SIMULATION_NAME 
-and --simulation_description SIMULATION_DESCRIPTION, which can be used for setting the simulation name and decription 
+and --simulation_description SIMULATION_DESCRIPTION, which can be used for setting the simulation name and description 
 respectively. 
 Without the option --binary analogous files but in the pdb format will be outputted. 
 
@@ -48,7 +48,7 @@ moves is not divisible by fpkf - 1 then the remaining delta-frames are filled wi
 The parameter --inputLaminFile for both orders of conversion is optional. If it is not provided then only the 
 simulation files are converted. 
 The conversion direction in the script is inferred from the extension of 
-the parameter after -i, but it can be also specfied using the --bin_to_pdb or --pdb_to_bin flags. 
+the parameter after -i, but it can be also specified using the --bin_to_pdb or --pdb_to_bin flags. 
 The name of the output simulation and lamin files can also be specified using the -o and --outputLaminFile flags.
 
 2. File structure
