@@ -669,7 +669,7 @@ def metropolis(nr_chrom, revers, chain, binders, attached_to_lamins, state, out_
 #        cur_offset = write_as_binary(nr_chrom, chain, binders, out_file, st_nr, 0, cur_offset, name + ";bonds=" + str(E))
     else:
         write_as_pdb(nr_chrom, chain, binders, attached_to_lamins, state, out_file, st_nr, 0, E)
-    for step in range(n):
+    for step in xrange(n):
         resp = modify(start_pos_chain, last_pos_chain, chain, binders, state)
         ch = numpy.array(chain, copy = True)
         b = numpy.array(binders, copy = True)
